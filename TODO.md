@@ -16,6 +16,8 @@
 
 - [x] Installed globally for Claude Code (2026-10-26): `npx skills add <repo> --skill codex-imagegen -g -a claude-code --copy` from branch `codex-cli-0.164` → `~/.claude/skills/codex-imagegen`
 
+- [x] Fork `main` fast-forwarded to `codex-0.164-update`; `npx skills add kastruppro/claude-skill-codex-imagegen` installs the new version (2026-10-29)
+
 ## Open
 - [x] Rewritten commits pushed with noreply author email (2026-10-29)
 - [ ] After the upstream merge, reinstall from `JunSeo99/claude-skill-codex-imagegen`
