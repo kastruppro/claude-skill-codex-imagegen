@@ -17,7 +17,7 @@
 - [x] Installed globally for Claude Code (2026-10-26): `npx skills add <repo> --skill codex-imagegen -g -a claude-code --copy` from branch `codex-cli-0.164` → `~/.claude/skills/codex-imagegen`
 
 ## Open
-- [ ] Push the rewritten commits (no AI trailers, review file untracked) with `--force-with-lease` and a noreply author email; GitHub rejects `admin@kastrup.pro` (GH007)
+- [x] Rewritten commits pushed with noreply author email (2026-10-29)
 - [ ] After the upstream merge, reinstall from `JunSeo99/claude-skill-codex-imagegen`
 - [x] PR upstream: https://github.com/JunSeo99/claude-skill-codex-imagegen/pull/1 (branch `codex-cli-0.164`)
 - [ ] Follow up on PR review; once merged, sync fork main with upstream
