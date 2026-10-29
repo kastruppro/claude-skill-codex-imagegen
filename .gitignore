@@ -16,3 +16,7 @@ tmp/
 scratch/
 *.png.bak
 .playwright-cli/
+
+# Local research and live test outputs (not part of the skill)
+coderef/
+test-runs/
