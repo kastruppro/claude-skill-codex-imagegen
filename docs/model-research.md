@@ -50,6 +50,14 @@ parameter, `transparent_background: boolean|null`. There is still no image-model
 parameter. The relay instructions now ask for `transparent_background=true` when the
 brief requests a transparent background.
 
+### Re-check on codex-cli 0.169.0 — 2026-11-15
+
+The same probe on 0.169.0 (`gpt-6-luna`, reasoning `none`, 8,873 tokens) reported
+the same four parameters as 0.164.0 (`prompt`, `referenced_image_paths`,
+`num_last_images_to_include`, `transparent_background`). There is still no
+image-model parameter, and whether a model name in the prompt selects the backend
+remains unknown.
+
 ## Decisions for people using Claude Code
 
 - Clear brief: execute immediately, with no mandatory questionnaire.

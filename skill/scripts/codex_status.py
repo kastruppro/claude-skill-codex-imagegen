@@ -8,7 +8,7 @@ import re
 import shutil
 import subprocess
 
-MINIMUM_VERSION = (0, 164, 0)
+MINIMUM_VERSION = (0, 169, 0)
 RELAY_MODEL = "gpt-6-luna"
 
 

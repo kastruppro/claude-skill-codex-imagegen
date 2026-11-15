@@ -7,7 +7,7 @@ description: Create and refine image files from Claude Code using a Codex subscr
 
 Claude directs and reviews; Codex only generates. Use the user's Codex subscription;
 never use a separately billed image API. Requires Python 3.9+, macOS/Linux, and
-logged-in Codex CLI 0.164.0+ (`codex login`). Resolve `<SKILL_DIR>` from this file.
+logged-in Codex CLI 0.169.0+ (`codex login`). Resolve `<SKILL_DIR>` from this file.
 
 ## Route by intent
 
@@ -87,7 +87,7 @@ python3 "<SKILL_DIR>/scripts/verify_png_alpha.py" --require-transparent-corners 
 If the subject must be fully solid (alpha is often 250–254), write a copy with
 `scripts/solidify_png_alpha.py <PNG> <OUT.png>`. Use the corners flag for isolated cutouts only. Do not mistake checkerboard pixels
 for alpha. See editing.md for transparent edits. Measure actual dimensions before
-export; 0.153.2 and 0.164.0 both returned ≈1.57 MP, which is not a resolution guarantee.
+export; 0.153.2, 0.164.0 and 0.169.0 all returned ≈1.57 MP, which is not a resolution guarantee.
 Resize proportionally; crop/pad intentionally, never stretch. Label upscaling honestly.
 
 Generate only the requested count. Allow at most one targeted repair per rejected

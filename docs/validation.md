@@ -3,6 +3,26 @@
 Recorded 2026-09-09 on macOS with codex-cli 0.153.4. No separately billed image
 API was used. Image backend identity is not reported by this subscription path.
 
+## Re-validation on codex-cli 0.169.0 (2026-11-15)
+
+Same probe and launcher flags as on 0.164.0, relay `gpt-6-luna`, reasoning `none`.
+All feature flags the launcher passes still exist (`multi_agent` is now marked
+deprecated; `skip_host_skill_discovery` is still under development and warns on stderr).
+The tool-schema probe from [model-capability-probe.json](model-capability-probe.json)
+(no image generation, 8,873 tokens) reported the same four parameters:
+`prompt`, `referenced_image_paths`, `num_last_images_to_include` and
+`transparent_background`, and still no image-model selector. Another no-image probe the
+same day returned `{"tools":[]}`: the image tool is reached through the code-mode
+`exec` wrapper (`code_mode_host` is stable), so the relay's self-report varies between
+runs. An empty direct tool list is not a failure; live generation is the real check.
+
+| Brief | Time | Relay tokens | Result |
+|---|---:|---:|---|
+| Transparent 1:1 sticker (red origami fox) | 51 s | 11,356 | 1254×1254 RGBA through the launcher; PNG found via `generated_images/<session id>/`; `verify_png_alpha.py --require-transparent-corners` passed (all four corners alpha 0) |
+| Transparent 1:1 cutout, installed skill from the fork's `main` | 51 s | 11,496 | 1254×1254 RGBA; all corners alpha 0; found through the session directory |
+
+No launcher changes were needed. The minimum/verified CLI is now 0.169.0.
+
 ## Re-validation on codex-cli 0.164.0 (2026-10-25)
 
 Relay `gpt-6-luna`, reasoning `none`, same isolation flags as the launcher, with the
@@ -47,14 +67,6 @@ then passed `verify_png_alpha.py --require-transparent-corners` end to end (44 s
 `gpt-6-luna` and `gpt-5.6-luna` both accept reasoning `none`, although
 `codex debug models` does not list it. `skip_host_skill_discovery` is still an
 under-development feature and prints a warning on stderr.
-
-## Re-check on codex-cli 0.169.0 (2026-11-15)
-
-The installed skill (from the fork's `main`) generated a transparent 1:1 cutout end to
-end: 51 s, 11,496 relay tokens, 1254×1254 RGBA, all corners alpha 0, found through the
-session directory. A no-image schema probe now reports `{"tools":[]}`: the image tool
-is only reachable from the code-mode `exec` wrapper (`code_mode_host` is stable), so an
-empty direct tool list is not a failure. No launcher change was needed.
 
 ## Live generation and editing (0.153.4)
 

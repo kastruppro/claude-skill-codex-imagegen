@@ -43,7 +43,7 @@ npx skills add https://github.com/JunSeo99/claude-skill-codex-imagegen --skill c
 
 ## 시작하기
 
-macOS 또는 Linux, Python 3.9+, Claude Code, 로그인된 Codex CLI 0.164.0+가 필요합니다.
+macOS 또는 Linux, Python 3.9+, Claude Code, 로그인된 Codex CLI 0.169.0+가 필요합니다.
 
 ```bash
 # Codex가 없다면 먼저 설치하고 로그인하세요.
