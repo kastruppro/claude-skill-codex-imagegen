@@ -48,6 +48,14 @@ then passed `verify_png_alpha.py --require-transparent-corners` end to end (44 s
 `codex debug models` does not list it. `skip_host_skill_discovery` is still an
 under-development feature and prints a warning on stderr.
 
+## Re-check on codex-cli 0.169.0 (2026-11-15)
+
+The installed skill (from the fork's `main`) generated a transparent 1:1 cutout end to
+end: 51 s, 11,496 relay tokens, 1254×1254 RGBA, all corners alpha 0, found through the
+session directory. A no-image schema probe now reports `{"tools":[]}`: the image tool
+is only reachable from the code-mode `exec` wrapper (`code_mode_host` is stable), so an
+empty direct tool list is not a failure. No launcher change was needed.
+
 ## Live generation and editing (0.153.4)
 
 | Artifact | Input | Result |

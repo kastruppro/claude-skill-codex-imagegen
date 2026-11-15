@@ -18,6 +18,9 @@
 
 - [x] Fork `main` fast-forwarded to `codex-0.164-update`; `npx skills add kastruppro/claude-skill-codex-imagegen` installs the new version (2026-10-29)
 
+- [x] Re-checked on codex-cli 0.169.0: live transparent run passes; direct tool probe now lists no tools (image tool only via code-mode exec) (2026-11-15)
+- [x] Installed globally from the fork with `npx skills add kastruppro/claude-skill-codex-imagegen` (2026-11-15)
+
 ## Open
 - [x] Rewritten commits pushed with noreply author email (2026-10-29)
 - [ ] After the upstream merge, reinstall from `JunSeo99/claude-skill-codex-imagegen`
