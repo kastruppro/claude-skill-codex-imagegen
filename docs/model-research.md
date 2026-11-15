@@ -57,6 +57,9 @@ the same four parameters as 0.164.0 (`prompt`, `referenced_image_paths`,
 `num_last_images_to_include`, `transparent_background`). There is still no
 image-model parameter, and whether a model name in the prompt selects the backend
 remains unknown.
+A second no-image probe the same day returned `{"tools":[]}`, because the image tool
+is reached through the code-mode `exec` wrapper. The relay's self-report varies between
+runs, so a live generation is the reliable check.
 
 ## Decisions for people using Claude Code
 
