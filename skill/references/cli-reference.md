@@ -4,7 +4,7 @@
 
 `run_codex_imagegen.py --prompt-file brief.txt` uses the logged-in Codex CLI.
 Python standard library only. No image API client, credential forwarding, or billing
-fallback. Minimum/verified CLI: 0.169.0. Runtime/account availability can still vary.
+fallback. Minimum CLI: 0.164.0; verified on 0.169.0. Runtime/account availability can still vary.
 
 Briefs need no `$imagegen` line; the launcher strips it so Codex does not inject
 its own imagegen skill. Options: repeat `--image` for ordered PNG/JPEG/WebP references; `--timeout` defaults

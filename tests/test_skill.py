@@ -189,7 +189,7 @@ class LauncherBoundaryTests(unittest.TestCase):
     def test_status_reports_ready_without_model_calls(self) -> None:
         status = load_module("codex_status", SKILL / "scripts" / "codex_status.py")
         replies = {
-            "--version": "codex-cli 0.169.0",
+            "--version": "codex-cli 0.164.0",
             "login": "Logged in using ChatGPT",
             "debug": json.dumps({"models": [{"slug": "gpt-6-luna"}]}),
         }

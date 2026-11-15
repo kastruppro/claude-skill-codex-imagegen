@@ -31,7 +31,7 @@ npx skills add https://github.com/JunSeo99/claude-skill-codex-imagegen --skill c
 
 ## セットアップ
 
-macOS/Linux、Python 3.9+、Claude Code、ログイン済みのCodex CLI 0.169.0+が必要です。
+macOS/Linux、Python 3.9+、Claude Code、ログイン済みのCodex CLI 0.164.0+が必要です。
 
 ```bash
 npm install -g @openai/codex

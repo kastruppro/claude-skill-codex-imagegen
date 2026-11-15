@@ -22,7 +22,7 @@
 - [x] Installed globally from the fork with `npx skills add kastruppro/claude-skill-codex-imagegen` (2026-11-15)
 
 ## Done (2026-11-15, codex-cli 0.169.0, branch `deps/2026-11-15`)
-- [x] Re-probed the tool schema on 0.169.0 (unchanged) and ran a live transparent image through the launcher; minimum/verified CLI 0.169.0
+- [x] Re-probed the tool schema on 0.169.0 (unchanged) and ran a live transparent image through the launcher; no code change, so the minimum stays 0.164.0
 - [x] CI: `actions/checkout` v7.0.1, `actions/setup-python` v7.1.0
 
 ## Open

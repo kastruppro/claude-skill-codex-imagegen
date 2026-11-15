@@ -7,7 +7,7 @@ description: Create and refine image files from Claude Code using a Codex subscr
 
 Claude directs and reviews; Codex only generates. Use the user's Codex subscription;
 never use a separately billed image API. Requires Python 3.9+, macOS/Linux, and
-logged-in Codex CLI 0.169.0+ (`codex login`). Resolve `<SKILL_DIR>` from this file.
+logged-in Codex CLI 0.164.0+ (`codex login`). Resolve `<SKILL_DIR>` from this file.
 
 ## Route by intent
 

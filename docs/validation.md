@@ -21,7 +21,7 @@ runs. An empty direct tool list is not a failure; live generation is the real ch
 | Transparent 1:1 sticker (red origami fox) | 51 s | 11,356 | 1254×1254 RGBA through the launcher; PNG found via `generated_images/<session id>/`; `verify_png_alpha.py --require-transparent-corners` passed (all four corners alpha 0) |
 | Transparent 1:1 cutout, installed skill from the fork's `main` | 51 s | 11,496 | 1254×1254 RGBA; all corners alpha 0; found through the session directory |
 
-No launcher changes were needed. The minimum/verified CLI is now 0.169.0.
+No launcher changes were needed, so the minimum stays 0.164.0.
 
 ## Re-validation on codex-cli 0.164.0 (2026-10-25)
 
