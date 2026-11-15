@@ -1,7 +1,7 @@
 # TODO
 
 ## Done (2026-10-25, codex-cli 0.164.0)
-- [x] Evaluate alternatives (see `CODE_REVIEW_2026-10-25_claude_opus_5.5.md`); fork JunSeo99
+- [x] Evaluate alternatives (local review file, deleted 2026-11-15 after all findings were done); fork JunSeo99
 - [x] Relay sets `transparent_background=true` when the brief asks for it (confirmed in a session rollout)
 - [x] Default relay `gpt-6-luna`; minimum CLI 0.164.0
 - [x] Fix: read PNGs from the session directory (relay never saw the saved path on 0.164)
