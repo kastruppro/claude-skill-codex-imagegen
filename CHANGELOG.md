@@ -7,7 +7,7 @@ All notable changes to this project are documented here. The project follows [Se
 ### Changed
 
 - Default relay is now `gpt-6-luna` (reasoning `none`), verified on codex-cli 0.164.0.
-- Minimum Codex CLI raised to 0.164.0; also verified on 0.169.0 (tool schema unchanged, live transparent run passed).
+- Minimum Codex CLI raised to 0.164.0; also verified on 0.169.0 and 0.170.0 (tool schema unchanged, live transparent run passed).
 - CI: `actions/checkout` v4 → v7.0.1 and `actions/setup-python` v5 → v7.1.0 (pinned by SHA).
 - Briefs no longer need `$imagegen`; the launcher strips it, because the mention made Codex inject its whole imagegen skill into every relay request. With permission and collaboration instructions also disabled, input per relay request fell from about 10,800 to 5,900 tokens.
 - Output PNGs are read from `generated_images/<session id>/`, using the session id from Codex's stderr header; model-reported paths are only a fallback.

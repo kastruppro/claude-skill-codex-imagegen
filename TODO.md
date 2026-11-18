@@ -25,6 +25,9 @@
 - [x] Re-probed the tool schema on 0.169.0 (unchanged) and ran a live transparent image through the launcher; no code change, so the minimum stays 0.164.0
 - [x] CI: `actions/checkout` v7.0.1, `actions/setup-python` v7.1.0
 
+## Done (2026-11-18, codex-cli 0.170.0, branch `deps/2026-11-18`)
+- [x] Re-probed the tool schema on 0.170.0 (unchanged) and ran a live transparent image through the launcher from Claude Code 2.1.327; no code change, so the minimum stays 0.164.0
+
 ## Open
 - [x] Rewritten commits pushed with noreply author email (2026-10-29)
 - [ ] After the upstream merge, reinstall from `JunSeo99/claude-skill-codex-imagegen`

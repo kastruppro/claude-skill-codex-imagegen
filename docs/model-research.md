@@ -61,6 +61,13 @@ A second no-image probe the same day returned `{"tools":[]}`, because the image 
 is reached through the code-mode `exec` wrapper. The relay's self-report varies between
 runs, so a live generation is the reliable check.
 
+### Re-check on codex-cli 0.170.0 — 2026-11-18
+
+The same probe on 0.170.0 (`gpt-6-luna`, reasoning `none`, 12,160 tokens) reported
+`image_gen.imagegen` with the same four parameters as 0.164.0 and 0.169.0. There is
+still no image-model parameter, and the tool description still does not say whether a
+model name in the prompt selects the backend.
+
 ## Decisions for people using Claude Code
 
 - Clear brief: execute immediately, with no mandatory questionnaire.
