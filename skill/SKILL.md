@@ -87,7 +87,7 @@ python3 "<SKILL_DIR>/scripts/verify_png_alpha.py" --require-transparent-corners 
 If the subject must be fully solid (alpha is often 250–254), write a copy with
 `scripts/solidify_png_alpha.py <PNG> <OUT.png>`. Use the corners flag for isolated cutouts only. Do not mistake checkerboard pixels
 for alpha. See editing.md for transparent edits. Measure actual dimensions before
-export; 0.153.2, 0.164.0, 0.169.0 and 0.170.0 all returned ≈1.57 MP, which is not a resolution guarantee.
+export; 0.153.2, 0.164.0 and 0.169.0–0.171.0 all returned ≈1.57 MP, which is not a resolution guarantee.
 Resize proportionally; crop/pad intentionally, never stretch. Label upscaling honestly.
 
 Generate only the requested count. Allow at most one targeted repair per rejected

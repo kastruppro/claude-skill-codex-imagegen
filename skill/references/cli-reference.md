@@ -4,7 +4,7 @@
 
 `run_codex_imagegen.py --prompt-file brief.txt` uses the logged-in Codex CLI.
 Python standard library only. No image API client, credential forwarding, or billing
-fallback. Minimum CLI: 0.164.0; verified on 0.170.0. Runtime/account availability can still vary.
+fallback. Minimum CLI: 0.164.0; verified on 0.171.0. Runtime/account availability can still vary.
 
 Briefs need no `$imagegen` line; the launcher strips it so Codex does not inject
 its own imagegen skill. Options: repeat `--image` for ordered PNG/JPEG/WebP references; `--timeout` defaults
@@ -34,7 +34,7 @@ Sunburst (demanding quality and precise editing). Both accept image references.
 Translate that distinction into a workflow: settle direction before spending on
 revisions, and carefully inspect preservation on exact edits.
 
-On 0.164.0 through 0.170.0 the built-in tool exposes `prompt`, `referenced_image_paths`,
+On 0.164.0 through 0.171.0 the built-in tool exposes `prompt`, `referenced_image_paths`,
 `num_last_images_to_include` and `transparent_background`, but still no image-model
 selector. Writing a model
 name in the brief is not model selection. Report the backend as “Codex-managed”;
@@ -50,7 +50,7 @@ Sources (checked 2026-09-09):
 
 ## Export and failure handling
 
-Inspect actual dimensions. 0.153.2, 0.164.0, 0.169.0 and 0.170.0 all returned ≈1.57 MP (e.g. 1672×941, 1254×1254)
+Inspect actual dimensions. 0.153.2, 0.164.0 and 0.169.0–0.171.0 all returned ≈1.57 MP (e.g. 1672×941, 1254×1254)
 with approximate prompt aspect ratios. Do not apply that as a permanent 2.5 limit. Keep the original
 PNG. For exact exports, use proportional resize plus intentional crop or padding
 with host tools (`sips` on macOS, ImageMagick on Linux). Never stretch a near-square
