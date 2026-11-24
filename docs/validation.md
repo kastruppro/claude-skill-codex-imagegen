@@ -3,6 +3,22 @@
 Recorded 2026-09-09 on macOS with codex-cli 0.153.4. No separately billed image
 API was used. Image backend identity is not reported by this subscription path.
 
+## Re-validation on codex-cli 0.172.0 (2026-11-24)
+
+Same probe and launcher flags as on 0.171.0, relay `gpt-6-luna`, reasoning `none`, run
+from Claude Code 2.1.331. All feature flags and `exec` options the launcher passes still
+exist; their status is unchanged (`multi_agent` deprecated, `skip_host_skill_discovery`
+under development and warning on stderr). The no-image tool-schema probe (9,033 tokens)
+reported the image tool (self-reported as `image_gen.imagegen`) with the same four
+parameters: `prompt`, `referenced_image_paths`, `num_last_images_to_include` and
+`transparent_background` (`boolean`), and still no image-model selector.
+
+| Brief | Time | Relay tokens | Result |
+|---|---:|---:|---|
+| Transparent 1:1 icon cutout (brass compass) | 57 s | 11,615 | 1254×1254 RGBA through the launcher; PNG found via `generated_images/<session id>/`; `verify_png_alpha.py --require-transparent-corners` passed (all four corners alpha 0); subject mostly near-opaque partial alpha, as before |
+
+No launcher changes were needed, so the minimum stays 0.164.0.
+
 ## Re-validation on codex-cli 0.171.0 (2026-11-23)
 
 Same probe and launcher flags as on 0.170.0, relay `gpt-6-luna`, reasoning `none`, run

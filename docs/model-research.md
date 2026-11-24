@@ -68,6 +68,13 @@ The same probe on 0.170.0 (`gpt-6-luna`, reasoning `none`, 12,160 tokens) report
 still no image-model parameter, and the tool description still does not say whether a
 model name in the prompt selects the backend.
 
+### Re-check on codex-cli 0.172.0 — 2026-11-24
+
+The same probe on 0.172.0 (`gpt-6-luna`, reasoning `none`, 9,033 tokens) reported the
+image tool (self-reported as `image_gen.imagegen`) with the same four parameters as
+0.164.0 through 0.171.0. There is still no image-model parameter, and the tool
+description still does not say whether a model name in the prompt selects the backend.
+
 ### Re-check on codex-cli 0.171.0 — 2026-11-23
 
 The same probe on 0.171.0 (`gpt-6-luna`, reasoning `none`, 9,043 tokens) reported
